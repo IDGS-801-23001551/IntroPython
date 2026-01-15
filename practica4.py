@@ -13,17 +13,32 @@ lista.sort()
 
 print(lista[:])
 
-repetido = -1 
+v = 0 
+pares = []
+impares = []
+ListaRepetidos = []
+B = False
 
 for i in range(20):
     x=lista[i]
+    if x % 2 == 0:
+        pares.append(x)
+    else:
+        impares.append(x) 
+
     for j in range(20):
         y=lista[j]
         if x==y:
-            repetido+=1
+            v+=int(1)        
+    if v>1:    
         
-    if repetido>0:    
-        print("El numero ",x," se repite", repetido, "veces")
-        repetido = -1
+        if x not in ListaRepetidos:     
+            print("El numero ",x," sale", v, "veces")
+            ListaRepetidos.append(x)
+    v=0        
+        
+    
+print("los numero pares son ", pares[:])
+print("los numero impares son ", impares[:])    
 
     

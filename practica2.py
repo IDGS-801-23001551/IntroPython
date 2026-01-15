@@ -2,19 +2,34 @@
 Crear un programa que tenga un menu con las siguientes opciones
 '''
 def suma():
-     print("Seleccionaste suma")
+    a = input("Ingresa el primer número: ")
+    b = input("Ingresa el segundo número: ")
+    suma = int(a)+int(b)
+    print("Resultado de la suma:", suma)
 
 def resta():
-     print("Seleccionaste resta")
+    a = input("Ingresa el primer número: ")
+    b = input("Ingresa el segundo número: ")
+    resta = int(a)-int(b)
+    print("Resultado de la resta:", resta)
 
 def multiplicacion():
-     print("Seleccionaste multiplicacion")
+    a = input("Ingresa el primer número: ")
+    b = input("Ingresa el segundo número: ")
+    multiplicacion = int(a)*int(b)
+    print("Resultado de la multiplicación:", multiplicacion)
 
 def division():
-     print("Seleccionaste division")
+    a = input("Ingresa el primer número: ")
+    b = input("Ingresa el segundo número: ")
+    if b != 0:
+        division = int(a)/int(b)
+        print("Resultado de la división:", division)
+    else:
+        print("Error: no se puede dividir entre 0")
 
 def salir():
-     print("Seleccionaste salir")
+    print("Seleccionaste salir")
 
 
 def main():
